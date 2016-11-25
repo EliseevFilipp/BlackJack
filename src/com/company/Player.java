@@ -1,8 +1,5 @@
 package com.company;
 
-import Command.Command;
-import Intellect.Intellect;
-
 /**
  * Created by student1 on 14.11.16.
  */
@@ -14,8 +11,14 @@ public abstract class Player {
         hand.add(current);
     }
 
+    public Player(String name, Intellect intellect) {
+        this.intellect = intellect;
+    }
+
     public Command decision() {
         int score = hand.getScore();
+        if (score>21)
+            return Command.STAND;
         return intellect.decide(score);
     }
 }

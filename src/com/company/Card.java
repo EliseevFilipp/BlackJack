@@ -6,6 +6,8 @@ package com.company;
 public class Card {
     Suit suit;
     Value value;
+    public int getScore;
+
     public int getScore(){
         return  this.value.score;
     }

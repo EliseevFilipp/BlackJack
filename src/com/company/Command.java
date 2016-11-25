@@ -1,4 +1,4 @@
-package Command;
+package com.company;
 
 /**
  * Created by student1 on 18.11.16.

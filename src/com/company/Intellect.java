@@ -1,6 +1,6 @@
-package Intellect;
+package com.company;
 
-import Command.Command;
+import com.company.Command;
 
 /**
  * Created by student1 on 21.11.16.
